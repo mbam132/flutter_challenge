@@ -6,7 +6,8 @@ class CharacterViewModel extends ChangeNotifier {
   List<dynamic> characterResult = [];
 
   Future<void> searchCharacter(String name) async {
-    characterResult = await _repo.getCharacter(name);
+    final result = await _repo.getCharacter(name);
+    characterResult = result.isNotEmpty ? [result.first] : [];
     notifyListeners();
   }
 }
