@@ -5,7 +5,6 @@ import 'package:flutter_app_challenge/ui/blocs/episodes/events.dart';
 import 'package:flutter_app_challenge/ui/blocs/episodes/state.dart';
 import 'package:flutter_app_challenge/ui/widgets/episode.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'view_model/index.dart'; // Import the ChaharacterWidget
 
 class EpisodesScreen extends StatefulWidget {
   const EpisodesScreen({super.key});
@@ -16,18 +15,10 @@ class EpisodesScreen extends StatefulWidget {
 
 class _EpisodesScreenState extends State<EpisodesScreen> {
   final EpisodesBloc episodesBloc = EpisodesBloc();
-  late final EpisodesViewModel _viewModel;
-
-  @override
-  void initState() {
-    super.initState();
-    _viewModel = EpisodesViewModel(episodesBloc);
-  }
 
   @override
   Widget build(BuildContext context) {
     final episodesBloc = context.read<EpisodesBloc>();
-    final EpisodesViewModel _viewModel= EpisodesViewModel(episodesBloc);
 
     return BlocBuilder<EpisodesBloc, EpisodesState>(
     builder: (context, state){

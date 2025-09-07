@@ -1,8 +1,7 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
+import 'package:flutter_app_challenge/ui/widgets/character.dart';
 import 'view_model/index.dart';
-import '../widgets/character.dart';
 
 class CharacterScreen extends StatefulWidget {
   const CharacterScreen({super.key});

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../data/repositories/characters_repo.dart';
+import 'package:flutter_app_challenge/data/repositories/characters_repo.dart';
 
 class CharacterViewModel extends ChangeNotifier {
   final CharactersRepo _repo = CharactersRepo();

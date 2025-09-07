@@ -2,7 +2,7 @@
 
 import 'package:bloc/bloc.dart';
 import 'package:flutter/widgets.dart';
-import '../../../data/repositories/characters_repo.dart';
+import 'package:flutter_app_challenge/data/repositories/characters_repo.dart';
 import 'events.dart';
 import 'state.dart';
 

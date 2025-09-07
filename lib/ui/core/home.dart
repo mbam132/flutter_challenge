@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_challenge/ui/character/screen.dart';
+import 'package:flutter_app_challenge/ui/characters/screen.dart';
 import 'package:flutter_app_challenge/ui/episodes/screen.dart';
-import '../characters/screen.dart'; // Import the characters screen
 
 
 class HomePage extends StatelessWidget {

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app_challenge/ui/blocs/characters/bloc.dart';
 import 'package:flutter_app_challenge/ui/blocs/characters/events.dart';
 import 'package:flutter_app_challenge/ui/blocs/characters/state.dart';
+import 'package:flutter_app_challenge/ui/widgets/character.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../widgets/character.dart'; // Import the CharacterWidget
 
 class CharactersScreen extends StatefulWidget {
   const CharactersScreen({super.key});
